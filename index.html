@@ -101,19 +101,29 @@
                             most admired brand for seniors and their families. We took inspiration
                             from our parent group – Max, and its strong ethos of ‘sevabhav,’
                             credibility and excellence.</p>
-                            <a href="propertyData/propertyBrochures/Antara.pdf" class="btn btn-primary">View Brochure</a>
+                        <a href="propertyData/propertyBrochures/Antara.pdf" class="btn btn-primary">View Brochure</a>
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="ANTARA NOIDA - Noida Phase 1">Contact
+                            Dealer</button>
                     </div>
                 </div>
             </div>
             <div class="col mb-4">
                 <div class="card">
-                    <img src="propertyData/propertyImages/EliteGolfgreens.jpg" class="card-img-top" alt="Elite Golfgeens">
+                    <img src="propertyData/propertyImages/EliteGolfgreens.jpg" class="card-img-top"
+                        alt="Elite Golfgeens">
                     <div class="card-body">
                         <h5 class="card-title">ELITE GOLFGREENS - Sector 79, Noida</h5>
-                        <p class="card-text">Elite Golf Greens is an impressive high rise residential complex of 2/3/4 and 5 BHK apartments
-                            that replenish the luxuries of a golf resort. Designed for an epicurean living experience, the
+                        <p class="card-text">Elite Golf Greens is an impressive high rise residential complex of 2/3/4
+                            and 5 BHK apartments
+                            that replenish the luxuries of a golf resort. Designed for an epicurean living experience,
+                            the
                             complex offers a wide range of recreational facilities for all age groups.</p>
-                            <a href="propertyData/propertyBrochures/Elite_Golfgreens.pdf" class="btn btn-primary">View Brochure</a>
+                        <a href="propertyData/propertyBrochures/Elite_Golfgreens.pdf" class="btn btn-primary">View
+                            Brochure</a>
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="ELITE GOLFGREENS - Sector 79, Noida">Contact
+                            Dealer</button>
                     </div>
                 </div>
             </div>
@@ -122,10 +132,14 @@
                     <img src="propertyData/propertyImages/Botnia.jpg" class="card-img-top" alt=".Botnia">
                     <div class="card-body">
                         <h5 class="card-title">BOTNIA - Sector 144, Noida</h5>
-                        <p class="card-text">Designed to house generations to come, the delightful gardens of Botnia yield fruits of prosperity and abundance. The scenic landscape is covered with expanses of 
+                        <p class="card-text">Designed to house generations to come, the delightful gardens of Botnia
+                            yield fruits of prosperity and abundance. The scenic landscape is covered with expanses of
                             green patches, bringing residents closer to mother nature.
                         </p>
                         <a href="propertyData/propertyBrochures/Botnia.pdf" class="btn btn-primary">View Brochure</a>
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="BOTNIA - Sector 144, Noida">Contact
+                            Dealer</button>
                     </div>
                 </div>
             </div>
@@ -135,9 +149,13 @@
                     <img src="propertyData/propertyImages/luxuriya.jpg" class="card-img-top" alt="Luxuriya Avenue">
                     <div class="card-body">
                         <h5 class="card-title">LUXURIYA AVENUE - Sector 150, Noida</h5>
-                        <p class="card-text">Welcomes you to come and see Extravagance, Luxury and Opulence in our project.
+                        <p class="card-text">Welcomes you to come and see Extravagance, Luxury and Opulence in our
+                            project.
                         </p>
                         <a href="propertyData/propertyBrochures/Luxuriya.pdf" class="btn btn-primary">View Brochure</a>
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="LUXURIYA AVENUE - Sector 150, Noida">Contact
+                            Dealer</button>
                     </div>
                 </div>
             </div>
@@ -150,6 +168,49 @@
 
 
 
+    <!--Contact Dealer Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="userName" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="userEmail" type="email"
+                                    placeholder="Email (Optional)">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="userMobile" type="tel" placeholder="Mobile"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <textarea class="form-control" id="message-text"
+                                placeholder="Message (Optional)"></textarea>
+                        </div>
+                        <div class="form-row modal-footer">
+                            <button type="button" class="btn btn-secondary float-left"
+                                data-dismiss="modal">Close</button>
+                            <button class="btn btn-primary" type="submit" onclick="sendEmail()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -177,6 +238,8 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
+    <script src="js/custom.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

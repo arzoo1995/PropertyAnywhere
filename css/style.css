@@ -1,5 +1,5 @@
-.cardImage
+.rightAlign
 {
-    max-width: 600px;
-    max-height: 350px;
+    text-align: center;
+    align-items: center;
 }
