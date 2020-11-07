@@ -26,9 +26,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -198,13 +198,13 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <textarea class="form-control" id="message-text"
+                            <textarea class="form-control" id="userMessage"
                                 placeholder="Message (Optional)"></textarea>
                         </div>
                         <div class="form-row modal-footer">
-                            <button type="button" class="btn btn-secondary float-left"
+                            <button type="button" class="btn btn-secondary"
                                 data-dismiss="modal">Close</button>
-                            <button class="btn btn-primary" type="submit" onclick="sendEmail()">Submit</button>
+                            <button class="btn btn-primary" type="submit" data-dismiss="modal" onclick="sendEmail()">Submit</button>
                         </div>
                     </form>
                 </div>

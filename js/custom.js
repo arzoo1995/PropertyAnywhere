@@ -7,17 +7,32 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     var modal = $(this)
     modal.find('.modal-title').text(recipient)
   })
+  
 
   function sendEmail() {
+    var userName = document.getElementById("userName").value;
+    var userEmail = document.getElementById("userEmail").value;
+    var userMobile = document.getElementById("userMobile").value;
+    var userMessage = document.getElementById("userMessage").value;
+    var userTitle = document.getElementById("exampleModalLabel").innerHTML;
+
     Email.send({
         Host : "smtp.gmail.com",
         Username : "query.propertyanywhere@gmail.com",
         Password : "Arzoo@1995",
         To : 'query.propertyanywhere@gmail.com',
-        From : "query.propertyanywhere@gmail.com",
-        Subject : "Test email",
-        Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+        From : "PropertyAnywhere <query.propertyanywhere@gmail.com>",
+        Subject : "Query | " + userTitle,
+        Body : "<html><h2>Name: " + userName + "</h2>\
+        <h2>Email: " + userEmail + "</h2>\
+        <h2>Moble: " + userMobile + "</h2>\
+        <h2>Message:<h2>\
+        <p>" + userMessage + "</p></html>"
     }).then(
-      message => alert(message)
+        
     );
+    document.getElementById("userName").value = "";
+    document.getElementById("userEmail").value = ""
+    document.getElementById("userMobile").value = "";
+    document.getElementById("userMessage").value = ""; 
     }
