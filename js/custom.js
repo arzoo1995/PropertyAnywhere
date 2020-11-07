@@ -20,7 +20,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         Host : "smtp.gmail.com",
         Username : "query.propertyanywhere@gmail.com",
         Password : "Arzoo@1995",
-        To : 'query.propertyanywhere@gmail.com',
+        To : 'anurag.gupta1234@gmail.com',
+        Cc : 'query.propertyanywhere@gmail.com',
         From : "PropertyAnywhere <query.propertyanywhere@gmail.com>",
         Subject : "Query | " + userTitle,
         Body : "<html><h2>Name: " + userName + "</h2>\
