@@ -27,10 +27,10 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         Body : "<html><h2>Name: " + userName + "</h2>\
         <h2>Email: " + userEmail + "</h2>\
         <h2>Moble: " + userMobile + "</h2>\
-        <h2>Message:<h2>\
+        <h2>Message:</h2>\
         <p>" + userMessage + "</p></html>"
     }).then(
-        
+      message => alert(message)
     );
     document.getElementById("userName").value = "";
     document.getElementById("userEmail").value = ""
